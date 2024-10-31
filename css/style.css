@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+/*
+font-family: "Knewave", system-ui;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Knewave&display=swap');
+/*
+font-family: "Imprima", sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Jockey+One&family=Knewave&display=swap');
+/*
+font-family: "Jockey One", sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(../assets/imagenes.figma/imagenDeFondo.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html{
+    font-size: 1.5625rem
+}
+
+header{
+    background-color: #e30514;
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 250px 70% 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    object-fit: cover;
+    grid-template-areas: 
+    "nav-img grid1 grid3"
+    "nav-img grid2 grid3"
+    ;
+}
+
+.nav-img{
+    grid-area: nav-img;
+}
+.grid1{
+    grid-area: grid1;
+}
+.grid2{
+    grid-area: grid2;
+}
+.grid3{
+    grid-area: grid3;
+}
+
+
+.clase-titulo{
+    font-family: "Knewave", system-ui;
+    color: white;
+    font-size: 3.125rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.barra-busqueda{
+    display: flex;
+    margin: .1875rem;
+    font-family: "Knewave", system-ui;
+    font-size: 3.125rem;
+}
+.nav-bar1{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+.nav-bar2{
+    display: flex;
+    gap: 90px;
+}
+.nav-bar2 li:active{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-bar2 li:hover{
+    border-radius: 100% 100%;
+    font-size: 4.375rem;
+}
+.barra-busqueda a{
+    color: white;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.section-moto{
+    display: flex;
+    grid-template-columns: 100px 400px 600px;
+    grid-template-rows: 300px 100px 100px;
+    font-family: "Imprima", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 628px;
+    margin-bottom: 150px;
+    background-image: url(../assets/imagenes.figma/image.png)
+}
+
+.parrafo-1{
+    margin-top: 400px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    width: 460px;
+    background-color: black;
+    display: flex;
+}
+
+.parrafo-2{
+    display: flex;
+    background-color: #e30514;
+    margin-left: 80px;
+}
+
+
+.section-xr{
+    background-repeat: no-repeat;
+    width: 777px;
+    height: 489px;
+    background-position: center left;
+    margin-left: 20px;
+    background-image: url(../assets/imagenes.figma/motosxr.png)
+}
+.parrafo-3{
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+.familia-xr{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+}
+.clase-titulo2{
+    font-family: "Knewave", system-ui;
+    color: white;
+    font-size: 2.5rem;
+}
+.clase-titulo-rojo{
+    font-family: "Knewave", system-ui;
+    color: red;
+    font-size: 2.5rem;
+}
+
+
+
+.section-cb300f{
+    background-image: url(../assets/imagenes.figma/cb300f.png);
+    left: 1310px;
+    width: 800px;
+    height: 489px;
+    margin-bottom: 50px;
+}
+.cb-300{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 270px;
+}
+.parrafo-cb{
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.parrafo-nueva{
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.clase-titulo3{
+    font-family: "Knewave", system-ui;
+    color: white;
+    font-size: 2.25rem;
+}
+
+.fondo-principal{
+    background-color: black;
+    background-image: url(../assets/imagenes.figma/imagenDeFondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.fondo-cb{
+    background-color: black;
+    background-image: url(../assets/motos.cb/fondo\ cb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160% 100%;
+}
+.fondo-cbr{
+    background-color: black;
+    background-image: url(../assets/motos.cbr/fondo\ cbr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160% 100%;
+}
+.fondo-crf{
+    background-color: black;
+    background-image: url(../assets/motos.crf/fondo\ crf.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160% 100%;
+}
+.fondo-xr{
+    background-color: black;
+    background-image: url(../assets/motos.xr/fondo\ xr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160% 100%;
+}
+.fondo-form{
+    background-image: url(../assets/form/fondo-pantalla-abstracto-negro-rojo-generado-ia_991150-2091.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.parrafo-4{
+    font-size: 6.25rem;
+    font-family: "Knewave", system-ui;
+    color: #e30514;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo-5{
+    font-family: "Knewave", system-ui;
+    color: black;
+    font-size: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 600px;
+    height: 200px;
+    border-radius: 200px;
+}
+.parrafo-5 h3{
+    display: flex;
+    justify-content: center;
+}
+.parrafo-5 h2{
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo-6{
+    font-size: 3.125rem;
+    font-family: "Knewave", system-ui;
+    color: #e30514;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+main{
+    padding-top: 20px;
+}
+.button-custom button{
+    border-radius: 100% 100% 100% 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-color: none;
+    height: 500px;
+    width: 600px;
+}
+
+.formulario{
+    padding-top: 60px;
+}
+form{
+    color: white;
+    font-size: 1.875rem;
+    margin: 10px;
+}
+form input{
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: .625rem
+}
+form label{
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+.enviar{
+    padding-left: 1020px;
+}
+.enviar :hover{
+    font-size: .75rem;
+}
+
+
+/*CB*/
+.cb{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cb1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.cb2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.crf{
+    display: flex;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    gap: 420px;
+    align-items: center;
+}
+
+.marcas-footer{
+    padding-top: 500px;
+}
+.mega-contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.contenedor-primera-imagen{
+    background-image: url(../assets/imagenes.figma/motosxr.png);
+    background-size: cover;
+    background-position:center;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.contenedor-segunda-imagen{
+    background-image: url(../assets/imagenes.figma/cb300f\(1\).png);
+    background-size: cover;
+    background-position:center;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-principal h2{
+    text-align: center;
+}
+
+.txt-principal h2{
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.txt-principal h3{
+    font-family: "Knewave", system-ui;
+    color: white;
+    font-size: 70px;
+}
+
+.txt-principal h4{
+    font-family: "Knewave", system-ui;
+    color: red;
+    font-size: 70px;
+}
+
+.conjunto-txt{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conjunto-txt-2{
+    align-items: end;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.txt-principal-2 h2{
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.txt-principal-2 h3{
+    font-family: "Jockey One", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.txt-principal-2 h4{
+    font-family: "Knewave", system-ui;
+    color: white;
+    font-size: 2.25rem;
+}
+
+.conjunto-txt-2{
+    padding-top: 320px;
+}
+
+.footer-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-redes-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mega-contenedor-footer{
+    margin-top: 40px;
+    justify-content: space-between;
+    display: flex;
+    height: 350px;
+    background-color: black;
+}
+
+.ypf-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer img{
+    width: 600px;
+}
+
+.cb-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:1650px){
+    .contenedor-primera-imagen{
+        height: 400px;
+        width: 600px;
+    }
+
+    .contenedor-segunda-imagen{
+        height: 400px;
+        width: 600px;
+    }
+
+    .txt-principal h2{
+        font-size: 40px;
+    }
+    .txt-principal h3{
+        font-size: 40px;
+    }
+    .txt-principal h4{
+        font-size: 40px;
+    }
+
+    .txt-principal-2 h2{
+        font-size: 40px;
+    }
+    .txt-principal-2 h3{
+        font-size: 40px;
+    }
+    .txt-principal-2 h4{
+        font-size: 40px;
+    }
+
+    .conjunto-txt-2{
+        padding: 290px 0px 0px 0px;
+    }
+}
+
+@media (max-width:1280px){
+    .parrafo-1{
+        margin-top: 250px;
+        width: 300px;
+    }
+
+    .parrafo-1 p{
+        font-size: 40px;
+        width: 480px;
+    }
+
+    .parrafo-2{
+        width: 345px;
+    }
+
+    .parrafo-2 p{
+        font-size: 40px;
+        width: 480px;
+    }
+
+    .section-moto{
+        height: 400px;
+    }
+
+    .contenedor-primera-imagen{
+        height: 400px;
+        width: 400px;
+    }
+
+    .contenedor-segunda-imagen{
+        height: 400px;
+        width: 400px;
+    }
+
+    .txt-principal h2{
+        font-size: 30px;
+    }
+    .txt-principal h3{
+        font-size: 30px;
+    }
+    .txt-principal h4{
+        font-size: 30px;
+    }
+
+    .txt-principal-2 h2{
+        font-size: 30px;
+    }
+    .txt-principal-2 h3{
+        font-size: 30px;
+    }
+    .txt-principal-2 h4{
+        font-size: 30px;
+    }
+
+    .conjunto-txt-2{
+        padding: 290px 0px 0px 0px;
+    }
+}
+
+@media (max-width:1210px){
+    .mega-contenedor-footer{
+        height: 250px;
+    }
+
+    .logo-footer img{
+        width: 400px;
+    }
+
+    .ypf-contenedor img{
+        width: 100px;
+    }
+
+    .img-redes-footer img{
+        width: 40px;
+    }
+
+    .clase-titulo{
+        font-size: 2.1875rem;
+    }
+    .barra-busqueda{
+        font-size: 2.1875rem;
+    }
+    .nav-bar2{
+        gap: 30px;
+    }
+    header{
+        height: 225px;
+        display: grid;
+        grid-template-columns: 225px 60% 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .nav-img a img{
+        width: 220px;
+        height: 220px;
+    }
+    .nav-logo img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .section-moto{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:895px){
+    .ubicacion img{
+        width: 600px;
+    }
+
+    .nav-img a img{
+        width: 190px;
+        height: 190px;
+    }
+
+    .nav-logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    header{
+        height: 190px;
+        display: grid;
+        grid-template-columns: 190px 50% 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .mega-contenedor{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:603px){
+    header{
+        height: 150px;
+        display: grid;
+        grid-template-columns: 150px 1fr 150px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .logo-footer img{
+        width: 300px;
+    }
+
+    .nav-bar2 a{
+        display: none;
+    }
+
+    .clase-titulo{
+        font-size: 45px;
+    }
+    .nav-img a img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .nav-logo{
+        padding-top: 60px;
+    }
+
+    .nav-logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .ubicacion img{
+        width: 450px;
+    }
+    .parrafo-1 p{
+        font-size: 30px;
+    }
+
+    .parrafo-1{
+        width: 220px;
+    }
+
+    .parrafo-2{
+        width: 260px;
+    }
+
+    .parrafo-2 p{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:460px){
+    .ubicacion img{
+        width: 350px;
+    }
+
+    header{
+        height: 130px;
+        display: grid;
+        grid-template-columns: 130px 1fr 130px;
+    }
+
+    .logo-footer img{
+        width: 300px;
+    }
+
+    .nav-bar2 a{
+        display: none;
+    }
+
+    .clase-titulo{
+        font-size: 45px;
+    }
+    .nav-img a img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .nav-logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .img-redes-footer{
+        gap: 5px;
+    }
+
+    .logo-footer img{
+        width: 200px;
+    }
+}
+
+@media (max-width:1250px){
+    .button-custom button{
+        height: 400px;
+        width: 500px;
+    }
+
+    .button-custom img{
+        width: 400px;
+    }
+    
+    .parrafo-5{
+        width: 400px;
+        height: 130px;
+    }
+
+    .parrafo-5 h2{
+        font-size: 40px;
+    }
+
+    .parrafo-5 h3{
+        font-size: 40px;
+    }
+
+    .cb{
+        gap: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .cb1{
+        gap: 10px;
+        padding-bottom: 50px;
+    }
+    .cb2{
+        gap: 10px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:1020px){
+    .button-custom button{
+        height: 300px;
+        width: 400px;
+    }
+
+    .button-custom img{
+        width: 300px;
+    }
+    
+    .parrafo-5{
+        width: 300px;
+        height: 100px;
+    }
+
+    .parrafo-5 h2{
+        font-size: 30px;
+    }
+
+    .parrafo-5 h3{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:830px){
+    .parrafo-4{
+        font-size: 100px;
+    }
+
+    .button-custom button{
+        height: 200px;
+        width: 300px;
+    }
+
+    .button-custom img{
+        width: 210px;
+    }
+    
+    .parrafo-5{
+        width: 200px;
+        height: 70px;
+    }
+
+    .parrafo-5 h2{
+        font-size: 20px;
+    }
+
+    .parrafo-5 h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:615px){
+    .cb{
+        flex-direction: column;
+    }
+    .cb1{
+        flex-direction: column;
+    }
+    .cb2{
+        flex-direction: column;
+    }
+}
